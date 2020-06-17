@@ -16,6 +16,10 @@ list.forEach(() => {
   document.write(`${firstName}<br>`);
 })
 
+// () => {} === function() {}
+// => is called fat arrow
+// >=, <= are operators for smaller than and greater than
+
 setTimeout(() => {
   list.forEach(() => {
     //document.write would replace the whole html text instead of appending our text it
