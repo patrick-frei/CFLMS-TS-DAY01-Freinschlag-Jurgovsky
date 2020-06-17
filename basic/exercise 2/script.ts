@@ -16,6 +16,12 @@ list.forEach(() => {
   document.write(`${firstName}<br>`);
 })
 
+/*
+list.forEach(function() {
+  document.write(`${firstName}<br>`);
+})
+*/
+
 // () => {} === function() {}
 // => is called fat arrow
 // >=, <= are operators for smaller than and greater than
