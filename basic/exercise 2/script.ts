@@ -1,8 +1,24 @@
-let numbersOne: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let numbersTwo: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let firstName: string = "Patrick";
+let lastName: string = "Freinschlag";
 
-for (let i = 0; i < numbersOne.length; i++) {
-  for (let j = 0; j < numbersTwo.length; j++) {
-    document.write(`${numbersTwo[j]} x ${numbersOne[i]} = ${numbersTwo[j] * numbersOne[i]}<br>`);
-  }
+//let list: number[];
+//let list: Array<number>;
+let list = new Array();
+for (let i: number = 0; i < 10; i++) {
+  console.log(i);
+  list.push(i);
 }
+console.log(list);
+
+document.write(`${firstName} ${lastName}<br>`);
+
+list.forEach(() => {
+  document.write(`${firstName}<br>`);
+})
+
+setTimeout(() => {
+  list.forEach(() => {
+    //document.write would replace the whole html text instead of appending our text it
+    document.body.innerHTML += `${lastName}<br>`;
+  })
+},5000);
